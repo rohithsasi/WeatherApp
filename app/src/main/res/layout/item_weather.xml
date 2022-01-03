@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    TODO Move all the harcoded strings to strings.xml-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginStart="18dp"
+    android:layout_marginEnd="18dp"
+    android:layout_marginTop="12dp"
+    android:layout_height="80dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/H2"
+        android:id="@+id/day"
+        android:text="Today"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/H2"
+        android:id="@+id/temp"
+        android:gravity="center"
+        android:text="76&#xb0;"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High:" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/temp_high"
+            style="@style/H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="76&#xb0;" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low:" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/temp_low"
+            style="@style/H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36&#xb0;" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="end"
+        android:id="@+id/weather"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_sunny" />
+
+</LinearLayout>
